@@ -5,8 +5,8 @@ import cartReducer from "../reducers/cartReducer";
 const CartContext = createContext();
 
 const getLocalCartData = () => {
-    let localCartData = localStorage.getItem("teerexStore");
-    if ( localCartData.length ===0) {
+    let localCartData = localStorage.getItem("TeeRexStore") || [];
+    if (localCartData.length === 0 ) {
         return []
     } else {
         return JSON.parse(localCartData);
@@ -49,7 +49,7 @@ const CartProvider = ({ children }) => {
     useEffect(() => {
         dispatch({ type: "TOTAL_CART_ITEMS" });
         dispatch({ type: "TOTAL_PRICE" });
-
+        console.log(localStorage.setItem("teerexStore", JSON.stringify(state.cart)))
         localStorage.setItem("teerexStore", JSON.stringify(state.cart))
     }, [state.cart])
 

@@ -1,8 +1,6 @@
-// import axios from 'axios';
 import React from 'react'
 import { FaTrash } from 'react-icons/fa';
 import { useCartContext } from '../context/cartContext';
-// import FormatPrice from '../helpers/FormatPrice';
 import CartQuantityToggle from './CartQuantityToggle';
 
 const CartItem = ({ id, color, name, image, amount, price, max }) => {
