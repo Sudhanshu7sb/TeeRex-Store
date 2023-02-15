@@ -49,8 +49,7 @@ const CartProvider = ({ children }) => {
     useEffect(() => {
         dispatch({ type: "TOTAL_CART_ITEMS" });
         dispatch({ type: "TOTAL_PRICE" });
-        console.log(localStorage.setItem("teerexStore", JSON.stringify(state.cart)))
-        localStorage.setItem("teerexStore", JSON.stringify(state.cart))
+        localStorage.setItem("TeeRexStore", JSON.stringify(state.cart))
     }, [state.cart])
 
 
