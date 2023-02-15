@@ -1,5 +1,5 @@
 // import axios from 'axios';
-import React, { useEffect } from 'react'
+import React from 'react'
 import { FaTrash } from 'react-icons/fa';
 import { useCartContext } from '../context/cartContext';
 // import FormatPrice from '../helpers/FormatPrice';
