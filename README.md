@@ -1,3 +1,11 @@
+# Functionalities of the app
+1. Showing products fetched from api
+2. filtering of products 
+3. cart products CRUD
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
