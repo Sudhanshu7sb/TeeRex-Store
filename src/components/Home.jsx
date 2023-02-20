@@ -19,7 +19,7 @@ const Home = ({ products, setProducts }) => {
         
         {
           showFilterModal ? "" :
-            <div className='hidden sticky left-0 top-10  overflow-y-scroll lg:flex lg:w-[20%] h-[90vh]'>
+            <div className='hidden sticky left-0 top-10  overflow-y-scroll lg:flex lg:w-[20%] h-[80vh]'>
               <Filters />
             </div>
         }
