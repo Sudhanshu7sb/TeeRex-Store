@@ -4,7 +4,6 @@ import reducer from "../reducers/productReducer";
 
 const AppContext = createContext();
 
-// const API = "https://api.pujakaitem.com/api/products";
 const API = "https://geektrust.s3.ap-southeast-1.amazonaws.com/coding-problems/shopping-cart/catalogue.json"
 const initialState = {
     isLoading: "false",

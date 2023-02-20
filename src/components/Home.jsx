@@ -14,11 +14,17 @@ const Home = ({ products, setProducts }) => {
 
   return (
     <main className="App">
-      <Search products={products} setProducts={setProducts} showFilterModal={showFilterModal} setShowFilterModal={setShowFilterModal} setSearchText={setSearchText} handleSearch={handleSearch}/>
+      <Search products={products} setProducts={setProducts} showFilterModal={showFilterModal} setShowFilterModal={setShowFilterModal} setSearchText={setSearchText} handleSearch={handleSearch} />
       <section className='w-full flex justify-center lg:justify-between '>
+        
+        {
+          showFilterModal ? "" :
+            <div className='hidden sticky left-0 top-10  overflow-y-scroll lg:flex lg:w-[20%] h-[90vh]'>
+              <Filters />
+            </div>
+        }
 
-        <Filters />
-        <Products products={products} searchText={searchText}/>
+        <Products products={products} searchText={searchText} />
       </section>
     </main>
   )

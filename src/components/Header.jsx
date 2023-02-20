@@ -6,7 +6,7 @@ import { useCartContext } from '../context/cartContext';
 function Header() {
   const{total_items} =useCartContext();
   return (
-    <header className='flex justify-between w-[100%] bg-sky-700 text-white p-2 pr-3 sticky top-0'>
+    <header className='flex justify-between w-[100%] bg-sky-700 text-white p-2 pr-3 sticky top-0 z-10'>
       <h2 className='font-semibold w-[30%] text-left ml-3'><NavLink to="/">TeeRex Store</NavLink></h2>
       <nav className='w-[50%] md:w-[30%] '>
         <ul className='flex items-center justify-end  space-x-4 md:pr-3'>

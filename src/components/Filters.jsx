@@ -49,7 +49,7 @@ function Filters() {
 
 
     return (
-        <aside className={`hidden sticky left-0 top-12 mb-10 lg:flex lg:w-[20%] h-[80vh]  flex-col  items-start my-5 space-x-4`}>
+        <aside className={` flex  flex-col  items-start my-5 space-x-4`}>
             <header className="flex justify-between w-full px-6 py-3 mb-5">
                 <span className='font-semibold'>Filter</span>
                 <button className=" text-red-600" onClick={handleClear}>Clear</button>

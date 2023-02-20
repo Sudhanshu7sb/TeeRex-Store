@@ -112,7 +112,7 @@ const cartReducer = (state, action) => {
                 total_items: updatedTotalCartItems,
             }
         case "TOTAL_PRICE":
-            let total = state.cart.reduce((acc, currItem) => {
+            let total = state?.cart?.reduce((acc, currItem) => {
                 let { price, amount } = currItem;
 
                 acc = acc + (price * amount);

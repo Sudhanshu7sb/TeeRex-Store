@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaSearch } from "react-icons/fa";
 import { AiOutlineFilter } from "react-icons/ai";
-import FilterModal from './FilterModal';
+import Filters from './Filters';
 
 
 function Search({ products, setProducts, showFilterModal, setShowFilterModal,setSearchText,handleSearch }) {
@@ -20,10 +20,10 @@ function Search({ products, setProducts, showFilterModal, setShowFilterModal,set
 
       <AiOutlineFilter className='lg:hidden bg-slate-500 text-white hover:bg-sky-700 w-8 h-8 p-1 ml-2 rounded-md' onClick={() => setShowFilterModal(!showFilterModal)} />
 
-      {showFilterModal ? <div className='absolute top-0 bg-white z-50 right-0 h-[100vh] w-4/5'> <p onClick={() => setShowFilterModal(!showFilterModal)} className="text-red-600 text-left ml-4 text-3xl">X</p>
-        <div className='w-full h-[100vh]'>
+      {showFilterModal ? <div className='fixed top-0 bg-white z-50 right-0 h-[100vh] w-4/5'> <p onClick={() => setShowFilterModal(!showFilterModal)} className="text-red-600 text-left ml-4 text-3xl">X</p>
+        <div className='w-full h-full fixed'>
 
-          <FilterModal />
+          <Filters />
         </div>
       </div> : ""}
     </section>
